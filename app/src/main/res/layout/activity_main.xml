@@ -35,11 +35,5 @@
         android:layout_marginTop="75dp"
         android:background="@drawable/rec"/>
 
-    <ImageView 
-        android:id="@+id/mounthHolder"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:contentDescription="@string/app_name"/>
 
 </RelativeLayout>

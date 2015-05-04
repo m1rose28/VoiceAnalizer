@@ -7,7 +7,6 @@ import android.media.MediaRecorder;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup.LayoutParams;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainActivity extends Activity {
@@ -18,7 +17,6 @@ public class MainActivity extends Activity {
 	private double lastLevel = 0;
 	private Thread thread;
 	private static final int SAMPLE_DELAY = 75;
-	private ImageView mouthImage;
     private View soundbar;
     private TextView level;
     private TextView count;
@@ -28,9 +26,7 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		
-		mouthImage = (ImageView)findViewById(R.id.mounthHolder);
-		mouthImage.setKeepScreenOn(true);
+
 
         level = (TextView)findViewById(R.id.level);
         count = (TextView)findViewById(R.id.count);
@@ -63,18 +59,6 @@ public class MainActivity extends Activity {
 						
 						@Override
 						public void run() {
-							if(lastLevel > 0 && lastLevel <= 2){
-								mouthImage.setImageResource(R.drawable.mouth4);
-							}else
-							if(lastLevel > 2 && lastLevel <= 3){
-								mouthImage.setImageResource(R.drawable.mouth3);
-							}else
-							if(lastLevel > 3 && lastLevel <= 5){
-								mouthImage.setImageResource(R.drawable.mouth2);
-							}
-							if(lastLevel > 5){
-								mouthImage.setImageResource(R.drawable.mouth1);
-							}
 
                             String level1=String.format("%.2f",lastLevel);
 
