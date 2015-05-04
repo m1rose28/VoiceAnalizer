@@ -1,0 +1,2 @@
+/Users/lynnprose16/AndroidStudioProjects/VoiceAnalizerT/app/build/intermediates/classes/debug
+/Users/lynnprose16/AndroidStudioProjects/VoiceAnalizerT/app/build/intermediates/pre-dexed/debug/support-v4-18.0.0-787c7611e03ba38d8eb7b49ae590585e7e180bee.jar
